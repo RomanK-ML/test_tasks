@@ -33,7 +33,7 @@ void MainWindow::on_createSoundButton_clicked()
    itd.createSound();
    itd.saveFile();
 
-   ui->listenSoundButton->setEnabled(true);
+   //ui->listenSoundButton->setEnabled(true);
 }
 
 

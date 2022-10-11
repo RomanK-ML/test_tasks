@@ -13,6 +13,8 @@ void InterauralTimeDifference::init(float _speedSound, float _distanceEars, floa
 
     generateSoundSource();
 }
+
+//Генерируем случайный звук
 void InterauralTimeDifference::generateSoundSource()
 {
     if (soundSource.size() > 0)
@@ -31,12 +33,9 @@ void InterauralTimeDifference::generateSoundSource()
     }
 }
 
-
+//Высчитываем задержку и заполняем 2 канала данными
 void InterauralTimeDifference::createSound()
-{
-
-    //ITD=а/С (*+sin *) при -90i<*<+90i, (1)
-    //itdTime = (distanceEars / 2) / speedSound * (angleSource + sin(angleSource));
+{   
     itdTime = 30 * (distanceEars / 2) * (sin(angleSource) / speedSound);
 
     countAddData = std::fabs(std::round(itdTime * sampleRate / 1000));
@@ -50,6 +49,7 @@ void InterauralTimeDifference::createSound()
     }
 }
 
+//Сохраняем файл
 void InterauralTimeDifference::saveFile()
 {
     printf("\nSaveFile");

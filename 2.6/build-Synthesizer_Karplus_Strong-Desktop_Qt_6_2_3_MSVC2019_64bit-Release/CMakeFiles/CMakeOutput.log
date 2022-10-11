@@ -1,0 +1,109 @@
+The system is: Windows - 10.0.19044 - AMD64
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+Compiler: C:/Program Files (x86)/Microsoft Visual Studio/2019/Professional/VC/Tools/MSVC/14.29.30133/bin/HostX64/x64/cl.exe 
+Build flags: 
+Id flags:  
+
+The output was:
+0
+Оптимизирующий компилятор Microsoft (R) C/C++ версии 19.29.30146 для x64
+(C) Корпорация Майкрософт (Microsoft Corporation).  Все права защищены.
+
+CMakeCXXCompilerId.cpp
+Microsoft (R) Incremental Linker Version 14.29.30146.0
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+/out:CMakeCXXCompilerId.exe 
+CMakeCXXCompilerId.obj 
+
+
+Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CMakeCXXCompilerId.exe"
+
+Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CMakeCXXCompilerId.obj"
+
+The CXX compiler identification is MSVC, found in "C:/QT_projects/tests/build-Synthesizer_Karplus_Strong-Desktop_Qt_6_2_3_MSVC2019_64bit-Release/CMakeFiles/3.24.1/CompilerIdCXX/CMakeCXXCompilerId.exe"
+
+Detecting CXX compiler ABI info compiled with the following output:
+Change Dir: C:/QT_projects/tests/build-Synthesizer_Karplus_Strong-Desktop_Qt_6_2_3_MSVC2019_64bit-Release/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/PROGRA~2/Microsoft Visual Studio/2019/Professional/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe cmTC_6e982 && [1/2] Building CXX object CMakeFiles\cmTC_6e982.dir\CMakeCXXCompilerABI.cpp.obj
+Примечание: включение файла:  C:\Python310\Lib\site-packages\cmake\data\share\cmake-3.24\Modules\CMakeCompilerABI.h
+[2/2] Linking CXX executable cmTC_6e982.exe
+
+
+
+Performing C++ SOURCE FILE Test HAVE_STDATOMIC succeeded with the following output:
+Change Dir: C:/QT_projects/tests/build-Synthesizer_Karplus_Strong-Desktop_Qt_6_2_3_MSVC2019_64bit-Release/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/PROGRA~2/Microsoft Visual Studio/2019/Professional/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe cmTC_ed2f3 && [1/2] Building CXX object CMakeFiles\cmTC_ed2f3.dir\src.cxx.obj
+Примечание: включение файла:  C:\Program Files (x86)\Microsoft Visual Studio\2019\Professional\VC\Tools\MSVC\14.29.30133\include\atomic
+Примечание: включение файла:   C:\Program Files (x86)\Microsoft Visual Studio\2019\Professional\VC\Tools\MSVC\14.29.30133\include\yvals.h
+Примечание: включение файла:    C:\Program Files (x86)\Microsoft Visual Studio\2019\Professional\VC\Tools\MSVC\14.29.30133\include\yvals_core.h
+Примечание: включение файла:     C:\Program Files (x86)\Microsoft Visual Studio\2019\Professional\VC\Tools\MSVC\14.29.30133\include\vcruntime.h
+Примечание: включение файла:      C:\Program Files (x86)\Microsoft Visual Studio\2019\Professional\VC\Tools\MSVC\14.29.30133\include\sal.h
+Примечание: включение файла:       C:\Program Files (x86)\Microsoft Visual Studio\2019\Professional\VC\Tools\MSVC\14.29.30133\include\concurrencysal.h
+Примечание: включение файла:      C:\Program Files (x86)\Microsoft Visual Studio\2019\Professional\VC\Tools\MSVC\14.29.30133\include\vadefs.h
+Примечание: включение файла:     C:\Program Files (x86)\Microsoft Visual Studio\2019\Professional\VC\Tools\MSVC\14.29.30133\include\xkeycheck.h
+Примечание: включение файла:    C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\crtdbg.h
+Примечание: включение файла:     C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\corecrt.h
+Примечание: включение файла:     C:\Program Files (x86)\Microsoft Visual Studio\2019\Professional\VC\Tools\MSVC\14.29.30133\include\vcruntime_new_debug.h
+Примечание: включение файла:      C:\Program Files (x86)\Microsoft Visual Studio\2019\Professional\VC\Tools\MSVC\14.29.30133\include\vcruntime_new.h
+Примечание: включение файла:    C:\Program Files (x86)\Microsoft Visual Studio\2019\Professional\VC\Tools\MSVC\14.29.30133\include\crtdefs.h
+Примечание: включение файла:    C:\Program Files (x86)\Microsoft Visual Studio\2019\Professional\VC\Tools\MSVC\14.29.30133\include\use_ansi.h
+Примечание: включение файла:   C:\Program Files (x86)\Microsoft Visual Studio\2019\Professional\VC\Tools\MSVC\14.29.30133\include\cstddef
+Примечание: включение файла:    C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\stddef.h
+Примечание: включение файла:    C:\Program Files (x86)\Microsoft Visual Studio\2019\Professional\VC\Tools\MSVC\14.29.30133\include\xtr1common
+Примечание: включение файла:   C:\Program Files (x86)\Microsoft Visual Studio\2019\Professional\VC\Tools\MSVC\14.29.30133\include\cstdint
+Примечание: включение файла:    C:\Program Files (x86)\Microsoft Visual Studio\2019\Professional\VC\Tools\MSVC\14.29.30133\include\stdint.h
+Примечание: включение файла:   C:\Program Files (x86)\Microsoft Visual Studio\2019\Professional\VC\Tools\MSVC\14.29.30133\include\cstring
+Примечание: включение файла:    C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\string.h
+Примечание: включение файла:     C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\corecrt_memory.h
+Примечание: включение файла:      C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\corecrt_memcpy_s.h
+Примечание: включение файла:       C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\errno.h
+Примечание: включение файла:       C:\Program Files (x86)\Microsoft Visual Studio\2019\Professional\VC\Tools\MSVC\14.29.30133\include\vcruntime_string.h
+Примечание: включение файла:     C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\corecrt_wstring.h
+Примечание: включение файла:   C:\Program Files (x86)\Microsoft Visual Studio\2019\Professional\VC\Tools\MSVC\14.29.30133\include\xatomic.h
+Примечание: включение файла:    C:\Program Files (x86)\Microsoft Visual Studio\2019\Professional\VC\Tools\MSVC\14.29.30133\include\intrin0.h
+Примечание: включение файла:     C:\Program Files (x86)\Microsoft Visual Studio\2019\Professional\VC\Tools\MSVC\14.29.30133\include\intrin0.inl.h
+Примечание: включение файла:    C:\Program Files (x86)\Microsoft Visual Studio\2019\Professional\VC\Tools\MSVC\14.29.30133\include\type_traits
+Примечание: включение файла:     C:\Program Files (x86)\Microsoft Visual Studio\2019\Professional\VC\Tools\MSVC\14.29.30133\include\xstddef
+Примечание: включение файла:      C:\Program Files (x86)\Microsoft Visual Studio\2019\Professional\VC\Tools\MSVC\14.29.30133\include\cstdlib
+Примечание: включение файла:       C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\math.h
+Примечание: включение файла:        C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\corecrt_math.h
+Примечание: включение файла:       C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\stdlib.h
+Примечание: включение файла:        C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\corecrt_malloc.h
+Примечание: включение файла:        C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\corecrt_search.h
+Примечание: включение файла:        C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\corecrt_wstdlib.h
+Примечание: включение файла:        C:\Program Files (x86)\Microsoft Visual Studio\2019\Professional\VC\Tools\MSVC\14.29.30133\include\limits.h
+Примечание: включение файла:      C:\Program Files (x86)\Microsoft Visual Studio\2019\Professional\VC\Tools\MSVC\14.29.30133\include\initializer_list
+Примечание: включение файла:   C:\Program Files (x86)\Microsoft Visual Studio\2019\Professional\VC\Tools\MSVC\14.29.30133\include\xthreads.h
+Примечание: включение файла:    C:\Program Files (x86)\Microsoft Visual Studio\2019\Professional\VC\Tools\MSVC\14.29.30133\include\climits
+Примечание: включение файла:    C:\Program Files (x86)\Microsoft Visual Studio\2019\Professional\VC\Tools\MSVC\14.29.30133\include\xtimec.h
+Примечание: включение файла:     C:\Program Files (x86)\Microsoft Visual Studio\2019\Professional\VC\Tools\MSVC\14.29.30133\include\ctime
+Примечание: включение файла:      C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\time.h
+Примечание: включение файла:       C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\corecrt_wtime.h
+C:\QT_projects\tests\build-Synthesizer_Karplus_Strong-Desktop_Qt_6_2_3_MSVC2019_64bit-Release\CMakeFiles\CMakeTmp\src.cxx(17): warning C4312: приведение типов: преобразование из "unsigned int" в "void *" большего размера
+[2/2] Linking CXX executable cmTC_ed2f3.exe
+
+
+Source file was:
+#include <atomic>
+#include <cstdint>
+
+void test(volatile std::atomic<std::int64_t> &a)
+{
+    std::int64_t v = a.load(std::memory_order_acquire);
+    while (!a.compare_exchange_strong(v, v + 1,
+                                      std::memory_order_acq_rel,
+                                      std::memory_order_acquire)) {
+        v = a.exchange(v - 1);
+    }
+    a.store(v + 1, std::memory_order_release);
+}
+
+int main(int, char **)
+{
+    void *ptr = (void*)0xffffffc0; // any random pointer
+    test(*reinterpret_cast<std::atomic<std::int64_t> *>(ptr));
+    return 0;
+}

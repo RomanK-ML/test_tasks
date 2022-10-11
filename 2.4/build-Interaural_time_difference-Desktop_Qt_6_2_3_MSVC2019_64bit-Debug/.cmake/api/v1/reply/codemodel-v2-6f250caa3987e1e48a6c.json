@@ -1,0 +1,78 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"jsonFile" : "directory-.-Debug-d0094a50bb2071803777.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "Interaural_time_difference",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "Interaural_time_difference::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Interaural_time_difference-Debug-2888c4b5f7ce2cc90887.json",
+					"name" : "Interaural_time_difference",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "Interaural_time_difference_autogen::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Interaural_time_difference_autogen-Debug-8202aa254612c0fe358c.json",
+					"name" : "Interaural_time_difference_autogen",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "Interaural_time_difference_autogen_timestamp_deps::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Interaural_time_difference_autogen_timestamp_deps-Debug-a48ac5ad65462e98ea03.json",
+					"name" : "Interaural_time_difference_autogen_timestamp_deps",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "C:/Users/\u0420\u043e\u043c\u0430\u043d/Documents/GitHub/test_tasks/2.4/build-Interaural_time_difference-Desktop_Qt_6_2_3_MSVC2019_64bit-Debug",
+		"source" : "C:/Users/\u0420\u043e\u043c\u0430\u043d/Documents/GitHub/test_tasks/2.4/Interaural_time_difference"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 4
+	}
+}

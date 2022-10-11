@@ -1,14 +1,8 @@
 #ifndef LINEARCONGRUENTIALGENERATOR_H
 #define LINEARCONGRUENTIALGENERATOR_H
 
-#include <QObject>
-#include <QCoreApplication>
-#include <QDateTime>
 #include <QLabel>
 
-#include <array>
-#include <iostream>
-#include <stdio.h>
 #include "deque"
 #include "random"
 

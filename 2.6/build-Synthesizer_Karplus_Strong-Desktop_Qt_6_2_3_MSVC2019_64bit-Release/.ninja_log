@@ -1,0 +1,10 @@
+# ninja log v5
+2	407	6871998321471725	Synthesizer_Karplus_Strong_autogen/timestamp	2606ef038d47be10
+2	407	6871998321471725	Synthesizer_Karplus_Strong_autogen/mocs_compilation.cpp	2606ef038d47be10
+2	407	6871998321471725	C:/QT_projects/tests/build-Synthesizer_Karplus_Strong-Desktop_Qt_6_2_3_MSVC2019_64bit-Release/Synthesizer_Karplus_Strong_autogen/timestamp	2606ef038d47be10
+2	407	6871998321471725	C:/QT_projects/tests/build-Synthesizer_Karplus_Strong-Desktop_Qt_6_2_3_MSVC2019_64bit-Release/Synthesizer_Karplus_Strong_autogen/mocs_compilation.cpp	2606ef038d47be10
+407	2250	6871998341185938	CMakeFiles/Synthesizer_Karplus_Strong.dir/Synthesizer_Karplus_Strong_autogen/mocs_compilation.cpp.obj	7d8b0b0b10c52068
+415	2433	6871998343035996	CMakeFiles/Synthesizer_Karplus_Strong.dir/main.cpp.obj	1d4c93165973241e
+410	3834	6871998357011438	CMakeFiles/Synthesizer_Karplus_Strong.dir/mainwindow.cpp.obj	33bc9b36d2c7da
+412	4182	6871998360470295	CMakeFiles/Synthesizer_Karplus_Strong.dir/synthesizerkarplusstrong.cpp.obj	a651ffd5033374c2
+4182	4346	6871998362116127	Synthesizer_Karplus_Strong.exe	540542aef2c5dda0
