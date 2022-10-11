@@ -1,3 +1,10 @@
 # ninja log v5
-4	788	6871990737682450	build.ninja	e81fbc4b6766cf53
-4	798	6871990737682450	build.ninja	e81fbc4b6766cf53
+3	550	6872029241362707	Interaural_time_difference_autogen/timestamp	f6de6ffde76ce58d
+3	550	6872029241362707	Interaural_time_difference_autogen/mocs_compilation.cpp	f6de6ffde76ce58d
+3	550	6872029241362707	C:/QT_projects/tests/build-Interaural_time_difference-Desktop_Qt_6_2_3_MSVC2019_64bit-Debug/Interaural_time_difference_autogen/timestamp	f6de6ffde76ce58d
+3	550	6872029241362707	C:/QT_projects/tests/build-Interaural_time_difference-Desktop_Qt_6_2_3_MSVC2019_64bit-Debug/Interaural_time_difference_autogen/mocs_compilation.cpp	f6de6ffde76ce58d
+550	3621	6872029273112635	CMakeFiles/Interaural_time_difference.dir/Interaural_time_difference_autogen/mocs_compilation.cpp.obj	ef5eabe878a021c2
+555	3786	6872029274642134	CMakeFiles/Interaural_time_difference.dir/main.cpp.obj	45a1c6c70a22b7a9
+558	4050	6872029277461215	CMakeFiles/Interaural_time_difference.dir/mainwindow.cpp.obj	6cb4e824a6096670
+553	4216	6872029279120677	CMakeFiles/Interaural_time_difference.dir/interauraltimedifference.cpp.obj	b59bc67d3d0bb416
+4217	4620	6872029283042012	Interaural_time_difference.exe	f1a40540ef3811d
