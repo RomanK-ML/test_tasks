@@ -1,16 +1,19 @@
 #ifndef INTERAURALTIMEDIFFERENCE_H
 #define INTERAURALTIMEDIFFERENCE_H
 
-#include <QObject>
-#include <QWidget>
 #include <QtMath>
-#include <QLabel>
 
-#include "cmath"
 #include "random"
-#include "string"
 #include "deque"
 #include "AudioFile.h"
+
+#if defined _WIN32
+    #include <windows.h>
+    #include "mmsystem.h"
+    #include <iostream>
+    #pragma comment(lib, "winmm.lib")
+
+#endif
 
 class InterauralTimeDifference {
 private:

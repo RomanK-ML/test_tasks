@@ -26,12 +26,13 @@ void MainWindow::on_createSoundButton_clicked()
     sks.init(frequency, duration, sampleRate);
     sks.createSound();
     sks.saveFile();
-    //ui->listenSoundButton->setEnabled(true);
+    ui->listenSoundButton->setEnabled(true);
 }
 
 
 void MainWindow::on_listenSoundButton_clicked()
 {
 
+    sks.listenFile();
 }
 

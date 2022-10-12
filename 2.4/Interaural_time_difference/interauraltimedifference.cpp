@@ -35,7 +35,7 @@ void InterauralTimeDifference::generateSoundSource()
 
 //Высчитываем задержку и заполняем 2 канала данными
 void InterauralTimeDifference::createSound()
-{   
+{
     itdTime = 30 * (distanceEars / 2) * (sin(angleSource) / speedSound);
 
     countAddData = std::fabs(std::round(itdTime * sampleRate / 1000));
@@ -48,11 +48,9 @@ void InterauralTimeDifference::createSound()
         rightSamples.push_back(0);
     }
 }
-
 //Сохраняем файл
 void InterauralTimeDifference::saveFile()
 {
-    printf("\nSaveFile");
 
     audioFile.setNumChannels(2);
     audioFile.setSampleRate(sampleRate);
@@ -66,9 +64,11 @@ void InterauralTimeDifference::saveFile()
 
 
     audioFile.save(filePath, AudioFileFormat::Wave);
-    printf("\nsave is complete");
 }
 
 void InterauralTimeDifference::listenFile(){
+#if defined _WIN32
+    PlaySoundA((LPCSTR) filePath.c_str(), NULL, SND_FILENAME | SND_ASYNC);
+#endif
 
 }

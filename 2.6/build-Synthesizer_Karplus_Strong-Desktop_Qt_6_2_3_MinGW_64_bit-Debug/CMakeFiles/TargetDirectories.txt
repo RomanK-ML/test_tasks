@@ -1,5 +1,0 @@
-C:/QT_projects/tests/build-Synthesizer_Karplus_Strong-Desktop_Qt_6_2_3_MinGW_64_bit-Debug/CMakeFiles/Synthesizer_Karplus_Strong.dir
-C:/QT_projects/tests/build-Synthesizer_Karplus_Strong-Desktop_Qt_6_2_3_MinGW_64_bit-Debug/CMakeFiles/edit_cache.dir
-C:/QT_projects/tests/build-Synthesizer_Karplus_Strong-Desktop_Qt_6_2_3_MinGW_64_bit-Debug/CMakeFiles/rebuild_cache.dir
-C:/QT_projects/tests/build-Synthesizer_Karplus_Strong-Desktop_Qt_6_2_3_MinGW_64_bit-Debug/CMakeFiles/Synthesizer_Karplus_Strong_autogen_timestamp_deps.dir
-C:/QT_projects/tests/build-Synthesizer_Karplus_Strong-Desktop_Qt_6_2_3_MinGW_64_bit-Debug/CMakeFiles/Synthesizer_Karplus_Strong_autogen.dir

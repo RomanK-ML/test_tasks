@@ -1,23 +1,17 @@
 #ifndef SYNTHESIZERKARPLUSSTRONG_H
 #define SYNTHESIZERKARPLUSSTRONG_H
 
-#include <QObject>
-#include <QWidget>
-#include <QtMultimedia/QMediaPlayer>
-#include <QtMultimedia/QAudioOutput>
-#include <QtMultimedia/QSoundEffect>
-
-#include <QApplication>
-#include <QFile>
-#include <QtMultimedia/QAudioFormat>
-#include <QtMultimedia/QAudioOutput>
-#include <QtMultimedia/QAudioDecoder>
-
-#include "cmath"
 #include "deque"
 #include "random"
 #include "AudioFile.h"
-#include "string"
+
+#if defined _WIN32
+    #include <windows.h>
+    #include "mmsystem.h"
+    #include <iostream>
+    #pragma comment(lib, "winmm.lib")
+
+#endif
 
 class SynthesizerKarplusStrong
 {

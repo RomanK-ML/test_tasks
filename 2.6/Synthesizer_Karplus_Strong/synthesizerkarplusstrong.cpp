@@ -63,6 +63,10 @@ void SynthesizerKarplusStrong::saveFile(){
 }
 
 void SynthesizerKarplusStrong::listenFile(){
+    #if defined _WIN32
+        PlaySoundA((LPCSTR) filePath.c_str(), NULL, SND_FILENAME | SND_ASYNC);
+    #endif
+
 
 
 }
