@@ -13,11 +13,10 @@
 #include <QtWidgets/QApplication>
 #include <QtWidgets/QHBoxLayout>
 #include <QtWidgets/QLabel>
-#include <QtWidgets/QListWidget>
 #include <QtWidgets/QMainWindow>
 #include <QtWidgets/QMenuBar>
 #include <QtWidgets/QPushButton>
-#include <QtWidgets/QSpacerItem>
+#include <QtWidgets/QSpinBox>
 #include <QtWidgets/QStatusBar>
 #include <QtWidgets/QVBoxLayout>
 #include <QtWidgets/QWidget>
@@ -28,26 +27,23 @@ class Ui_MainWindow
 {
 public:
     QWidget *centralwidget;
+    QWidget *verticalLayoutWidget;
+    QVBoxLayout *verticalLayout;
+    QLabel *numbersLabel;
+    QSpinBox *oneNumberSpinBox;
+    QSpinBox *twoNumberSpinBox;
+    QSpinBox *threeNumberSpinBox;
+    QSpinBox *fourNumberSpinBox;
+    QWidget *verticalLayoutWidget_2;
+    QVBoxLayout *verticalLayout_2;
+    QLabel *nextNumberLabel;
+    QLabel *nextNumberValueLabel;
     QWidget *horizontalLayoutWidget;
     QHBoxLayout *horizontalLayout;
-    QVBoxLayout *verticalLayout;
-    QLabel *generatedNumbersLabel;
-    QListWidget *generatedNumbersList;
-    QSpacerItem *verticalSpacer;
-    QPushButton *generateButton;
-    QVBoxLayout *verticalLayout_2;
-    QLabel *nextNumbersLabel;
-    QListWidget *nextList;
-    QSpacerItem *verticalSpacer_2;
-    QPushButton *nextButton;
+    QPushButton *generatedNumbersButton;
     QWidget *horizontalLayoutWidget_2;
     QHBoxLayout *horizontalLayout_2;
-    QLabel *visualLabel;
-    QWidget *horizontalLayoutWidget_3;
-    QHBoxLayout *horizontalLayout_3;
-    QPushButton *searchButton;
-    QSpacerItem *horizontalSpacer;
-    QPushButton *clearButton;
+    QPushButton *nextNumberButton;
     QMenuBar *menubar;
     QStatusBar *statusbar;
 
@@ -55,108 +51,116 @@ public:
     {
         if (MainWindow->objectName().isEmpty())
             MainWindow->setObjectName(QString::fromUtf8("MainWindow"));
-        MainWindow->resize(600, 450);
+        MainWindow->resize(350, 450);
+        QSizePolicy sizePolicy(QSizePolicy::Fixed, QSizePolicy::Fixed);
+        sizePolicy.setHorizontalStretch(0);
+        sizePolicy.setVerticalStretch(0);
+        sizePolicy.setHeightForWidth(MainWindow->sizePolicy().hasHeightForWidth());
+        MainWindow->setSizePolicy(sizePolicy);
+        MainWindow->setMaximumSize(QSize(350, 550));
         centralwidget = new QWidget(MainWindow);
         centralwidget->setObjectName(QString::fromUtf8("centralwidget"));
+        verticalLayoutWidget = new QWidget(centralwidget);
+        verticalLayoutWidget->setObjectName(QString::fromUtf8("verticalLayoutWidget"));
+        verticalLayoutWidget->setGeometry(QRect(10, 10, 331, 181));
+        verticalLayout = new QVBoxLayout(verticalLayoutWidget);
+        verticalLayout->setObjectName(QString::fromUtf8("verticalLayout"));
+        verticalLayout->setContentsMargins(0, 0, 0, 0);
+        numbersLabel = new QLabel(verticalLayoutWidget);
+        numbersLabel->setObjectName(QString::fromUtf8("numbersLabel"));
+        numbersLabel->setStyleSheet(QString::fromUtf8("font: 16pt \"Segoe UI\";\n"
+"color: black;"));
+        numbersLabel->setAlignment(Qt::AlignCenter);
+
+        verticalLayout->addWidget(numbersLabel);
+
+        oneNumberSpinBox = new QSpinBox(verticalLayoutWidget);
+        oneNumberSpinBox->setObjectName(QString::fromUtf8("oneNumberSpinBox"));
+        oneNumberSpinBox->setMaximum(65554);
+        oneNumberSpinBox->setValue(157);
+
+        verticalLayout->addWidget(oneNumberSpinBox);
+
+        twoNumberSpinBox = new QSpinBox(verticalLayoutWidget);
+        twoNumberSpinBox->setObjectName(QString::fromUtf8("twoNumberSpinBox"));
+        twoNumberSpinBox->setMaximum(65554);
+        twoNumberSpinBox->setValue(5054);
+
+        verticalLayout->addWidget(twoNumberSpinBox);
+
+        threeNumberSpinBox = new QSpinBox(verticalLayoutWidget);
+        threeNumberSpinBox->setObjectName(QString::fromUtf8("threeNumberSpinBox"));
+        threeNumberSpinBox->setMaximum(65554);
+        threeNumberSpinBox->setValue(25789);
+
+        verticalLayout->addWidget(threeNumberSpinBox);
+
+        fourNumberSpinBox = new QSpinBox(verticalLayoutWidget);
+        fourNumberSpinBox->setObjectName(QString::fromUtf8("fourNumberSpinBox"));
+        fourNumberSpinBox->setMaximum(65554);
+        fourNumberSpinBox->setValue(13214);
+
+        verticalLayout->addWidget(fourNumberSpinBox);
+
+        verticalLayoutWidget_2 = new QWidget(centralwidget);
+        verticalLayoutWidget_2->setObjectName(QString::fromUtf8("verticalLayoutWidget_2"));
+        verticalLayoutWidget_2->setGeometry(QRect(10, 259, 331, 63));
+        verticalLayout_2 = new QVBoxLayout(verticalLayoutWidget_2);
+        verticalLayout_2->setObjectName(QString::fromUtf8("verticalLayout_2"));
+        verticalLayout_2->setContentsMargins(0, 0, 0, 0);
+        nextNumberLabel = new QLabel(verticalLayoutWidget_2);
+        nextNumberLabel->setObjectName(QString::fromUtf8("nextNumberLabel"));
+        nextNumberLabel->setAlignment(Qt::AlignCenter);
+
+        verticalLayout_2->addWidget(nextNumberLabel);
+
+        nextNumberValueLabel = new QLabel(verticalLayoutWidget_2);
+        nextNumberValueLabel->setObjectName(QString::fromUtf8("nextNumberValueLabel"));
+        nextNumberValueLabel->setStyleSheet(QString::fromUtf8("font: 22pt \"Segoe UI\";\n"
+"color: black;"));
+        nextNumberValueLabel->setAlignment(Qt::AlignCenter);
+
+        verticalLayout_2->addWidget(nextNumberValueLabel);
+
         horizontalLayoutWidget = new QWidget(centralwidget);
         horizontalLayoutWidget->setObjectName(QString::fromUtf8("horizontalLayoutWidget"));
-        horizontalLayoutWidget->setGeometry(QRect(10, 9, 581, 201));
+        horizontalLayoutWidget->setGeometry(QRect(12, 199, 331, 51));
         horizontalLayout = new QHBoxLayout(horizontalLayoutWidget);
         horizontalLayout->setObjectName(QString::fromUtf8("horizontalLayout"));
         horizontalLayout->setContentsMargins(0, 0, 0, 0);
-        verticalLayout = new QVBoxLayout();
-        verticalLayout->setObjectName(QString::fromUtf8("verticalLayout"));
-        generatedNumbersLabel = new QLabel(horizontalLayoutWidget);
-        generatedNumbersLabel->setObjectName(QString::fromUtf8("generatedNumbersLabel"));
-        generatedNumbersLabel->setAlignment(Qt::AlignCenter);
+        generatedNumbersButton = new QPushButton(horizontalLayoutWidget);
+        generatedNumbersButton->setObjectName(QString::fromUtf8("generatedNumbersButton"));
+        QSizePolicy sizePolicy1(QSizePolicy::Expanding, QSizePolicy::Fixed);
+        sizePolicy1.setHorizontalStretch(0);
+        sizePolicy1.setVerticalStretch(0);
+        sizePolicy1.setHeightForWidth(generatedNumbersButton->sizePolicy().hasHeightForWidth());
+        generatedNumbersButton->setSizePolicy(sizePolicy1);
+        generatedNumbersButton->setMaximumSize(QSize(200, 16777215));
+        generatedNumbersButton->setToolTipDuration(-5);
+        generatedNumbersButton->setLayoutDirection(Qt::LeftToRight);
 
-        verticalLayout->addWidget(generatedNumbersLabel);
-
-        generatedNumbersList = new QListWidget(horizontalLayoutWidget);
-        generatedNumbersList->setObjectName(QString::fromUtf8("generatedNumbersList"));
-
-        verticalLayout->addWidget(generatedNumbersList);
-
-        verticalSpacer = new QSpacerItem(20, 40, QSizePolicy::Minimum, QSizePolicy::Expanding);
-
-        verticalLayout->addItem(verticalSpacer);
-
-        generateButton = new QPushButton(horizontalLayoutWidget);
-        generateButton->setObjectName(QString::fromUtf8("generateButton"));
-
-        verticalLayout->addWidget(generateButton);
-
-
-        horizontalLayout->addLayout(verticalLayout);
-
-        verticalLayout_2 = new QVBoxLayout();
-        verticalLayout_2->setObjectName(QString::fromUtf8("verticalLayout_2"));
-        nextNumbersLabel = new QLabel(horizontalLayoutWidget);
-        nextNumbersLabel->setObjectName(QString::fromUtf8("nextNumbersLabel"));
-        nextNumbersLabel->setAlignment(Qt::AlignCenter);
-
-        verticalLayout_2->addWidget(nextNumbersLabel);
-
-        nextList = new QListWidget(horizontalLayoutWidget);
-        nextList->setObjectName(QString::fromUtf8("nextList"));
-
-        verticalLayout_2->addWidget(nextList);
-
-        verticalSpacer_2 = new QSpacerItem(20, 40, QSizePolicy::Minimum, QSizePolicy::Expanding);
-
-        verticalLayout_2->addItem(verticalSpacer_2);
-
-        nextButton = new QPushButton(horizontalLayoutWidget);
-        nextButton->setObjectName(QString::fromUtf8("nextButton"));
-        nextButton->setEnabled(false);
-
-        verticalLayout_2->addWidget(nextButton);
-
-
-        horizontalLayout->addLayout(verticalLayout_2);
+        horizontalLayout->addWidget(generatedNumbersButton);
 
         horizontalLayoutWidget_2 = new QWidget(centralwidget);
         horizontalLayoutWidget_2->setObjectName(QString::fromUtf8("horizontalLayoutWidget_2"));
-        horizontalLayoutWidget_2->setGeometry(QRect(10, 230, 581, 71));
+        horizontalLayoutWidget_2->setGeometry(QRect(10, 330, 331, 71));
         horizontalLayout_2 = new QHBoxLayout(horizontalLayoutWidget_2);
         horizontalLayout_2->setObjectName(QString::fromUtf8("horizontalLayout_2"));
         horizontalLayout_2->setContentsMargins(0, 0, 0, 0);
-        visualLabel = new QLabel(horizontalLayoutWidget_2);
-        visualLabel->setObjectName(QString::fromUtf8("visualLabel"));
-        visualLabel->setStyleSheet(QString::fromUtf8("font: 22pt \"Segoe UI\";\n"
-"color: rgb(0, 0, 0);\n"
-""));
-        visualLabel->setLineWidth(1);
-        visualLabel->setScaledContents(false);
-        visualLabel->setAlignment(Qt::AlignCenter);
+        nextNumberButton = new QPushButton(horizontalLayoutWidget_2);
+        nextNumberButton->setObjectName(QString::fromUtf8("nextNumberButton"));
+        sizePolicy1.setHeightForWidth(nextNumberButton->sizePolicy().hasHeightForWidth());
+        nextNumberButton->setSizePolicy(sizePolicy1);
+        nextNumberButton->setMaximumSize(QSize(200, 16777215));
+        nextNumberButton->setToolTipDuration(-5);
+        nextNumberButton->setLayoutDirection(Qt::LeftToRight);
 
-        horizontalLayout_2->addWidget(visualLabel);
-
-        horizontalLayoutWidget_3 = new QWidget(centralwidget);
-        horizontalLayoutWidget_3->setObjectName(QString::fromUtf8("horizontalLayoutWidget_3"));
-        horizontalLayoutWidget_3->setGeometry(QRect(10, 310, 581, 91));
-        horizontalLayout_3 = new QHBoxLayout(horizontalLayoutWidget_3);
-        horizontalLayout_3->setObjectName(QString::fromUtf8("horizontalLayout_3"));
-        horizontalLayout_3->setContentsMargins(0, 0, 0, 0);
-        searchButton = new QPushButton(horizontalLayoutWidget_3);
-        searchButton->setObjectName(QString::fromUtf8("searchButton"));
-        searchButton->setEnabled(false);
-
-        horizontalLayout_3->addWidget(searchButton);
-
-        horizontalSpacer = new QSpacerItem(60, 20, QSizePolicy::Fixed, QSizePolicy::Minimum);
-
-        horizontalLayout_3->addItem(horizontalSpacer);
-
-        clearButton = new QPushButton(horizontalLayoutWidget_3);
-        clearButton->setObjectName(QString::fromUtf8("clearButton"));
-
-        horizontalLayout_3->addWidget(clearButton);
+        horizontalLayout_2->addWidget(nextNumberButton);
 
         MainWindow->setCentralWidget(centralwidget);
         menubar = new QMenuBar(MainWindow);
         menubar->setObjectName(QString::fromUtf8("menubar"));
-        menubar->setGeometry(QRect(0, 0, 600, 21));
+        menubar->setGeometry(QRect(0, 0, 350, 21));
         MainWindow->setMenuBar(menubar);
         statusbar = new QStatusBar(MainWindow);
         statusbar->setObjectName(QString::fromUtf8("statusbar"));
@@ -170,13 +174,11 @@ public:
     void retranslateUi(QMainWindow *MainWindow)
     {
         MainWindow->setWindowTitle(QCoreApplication::translate("MainWindow", "\320\220\320\273\320\263\320\276\321\200\320\270\321\202\320\274 \320\262\321\213\321\207\320\270\321\201\320\273\320\265\320\275\320\270\321\217 \320\277\320\276\321\201\320\273\320\265\320\264\321\203\321\216\321\211\320\265\320\263\320\276 \321\207\320\270\321\201\320\273\320\260 \320\277\320\276 \321\207\320\265\321\202\321\213\321\200\320\265\320\274 \320\277\321\200\320\265\320\264\321\213\320\264\321\203\321\211\320\270\320\274", nullptr));
-        generatedNumbersLabel->setText(QCoreApplication::translate("MainWindow", "\320\247\320\270\321\201\320\273\320\260 \320\264\320\273\321\217 \320\262\321\213\321\207\320\270\321\201\320\273\320\265\320\275\320\270\321\217", nullptr));
-        generateButton->setText(QCoreApplication::translate("MainWindow", "\320\241\320\263\320\265\320\275\320\265\321\200\320\270\321\200\320\276\320\262\320\260\321\202\321\214", nullptr));
-        nextNumbersLabel->setText(QCoreApplication::translate("MainWindow", "\320\237\320\276\321\201\320\273\320\265\320\264\321\203\321\216\321\211\320\270\320\265 \321\207\320\270\321\201\320\273\320\260", nullptr));
-        nextButton->setText(QCoreApplication::translate("MainWindow", "\320\241\320\273\320\265\320\264\321\203\321\216\321\211\320\265\320\265 \321\207\320\270\321\201\320\273\320\276", nullptr));
-        visualLabel->setText(QCoreApplication::translate("MainWindow", "0", nullptr));
-        searchButton->setText(QCoreApplication::translate("MainWindow", "\320\237\320\276\320\264\320\276\320\261\321\200\320\260\321\202\321\214", nullptr));
-        clearButton->setText(QCoreApplication::translate("MainWindow", "\320\236\321\207\320\270\321\201\321\202\320\270\321\202\321\214", nullptr));
+        numbersLabel->setText(QCoreApplication::translate("MainWindow", "4 \321\207\320\270\321\201\320\273\320\260 \320\264\320\273\321\217 \320\277\321\200\320\265\320\264\321\201\320\272\320\260\320\267\320\260\320\275\320\270\321\217", nullptr));
+        nextNumberLabel->setText(QCoreApplication::translate("MainWindow", "\320\241\320\273\320\265\320\264\321\203\321\216\321\211\320\265\320\265 \321\207\320\270\321\201\320\273\320\276:", nullptr));
+        nextNumberValueLabel->setText(QCoreApplication::translate("MainWindow", "------", nullptr));
+        generatedNumbersButton->setText(QCoreApplication::translate("MainWindow", "\320\241\320\263\320\265\320\275\320\265\321\200\320\270\321\200\320\276\320\262\320\260\321\202\321\214 \321\201\320\273\321\203\321\207\320\260\320\271\320\275\321\213\320\265 \321\207\320\270\321\201\320\273\320\260", nullptr));
+        nextNumberButton->setText(QCoreApplication::translate("MainWindow", "\320\237\321\200\320\265\320\264\321\201\320\272\320\260\320\267\320\260\321\202\321\214 \321\207\320\270\321\201\320\273\320\276", nullptr));
     } // retranslateUi
 
 };

@@ -2,16 +2,16 @@
 #include "./ui_mainwindow.h"
 
 #include "stdio.h"
+#include "random"
 #include "linearcongruentialgenerator.h"
 
-
-LinearCongruentialGenerator lcg = LinearCongruentialGenerator(4);
 
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
     , ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
+    this->setFixedSize(350,450);
 }
 
 MainWindow::~MainWindow()
@@ -19,44 +19,52 @@ MainWindow::~MainWindow()
     delete ui;
 }
 
+//Генерирует 4 числа по случайным a, c, m.
+void generateFourNumbers(int *numbers){
+    //Рандомазер
+    std::random_device rnd;
+    std::mt19937 gen(rnd());
+    std::uniform_real_distribution<> dist(200, 65535);
+    int m = dist(gen);
+    std::uniform_real_distribution<> dist2(500, m);
+    int seed = dist2(gen);
+    int a = dist2(gen);
+    int c = dist2(gen);
 
-void MainWindow::on_generateButton_clicked()
-{
-    ui->generatedNumbersList->clear();
-    lcg.clearValues();
-    lcg.generateValues();
-    for(int i = 0; i < lcg.valuesCount; i++){
-        QString str = QString::number(lcg.numbersGenerated[i]);
-        ui->generatedNumbersList->addItem(str);
+    for (int i =  0; i < 4; i++) {
+        seed = (a * seed + c) % m;
+        numbers[i] = seed;
     }
-    ui->searchButton->setEnabled(true);
-    ui->visualLabel->text();
 }
 
-
-void MainWindow::on_nextButton_clicked()
+//Обработчик события клика по кнопке "Сгенерировать случайные числа"
+void MainWindow::on_generatedNumbersButton_clicked()
 {
-    QString nextStr = QString::number(lcg.getNextNumber());
-    ui->nextList->addItem(nextStr);
+    //Генерирует 4 числа и назначает их значение соответствующим SpinBox-ам.
+    int numbers[4];
+    generateFourNumbers(numbers);
+    ui->oneNumberSpinBox->setValue(numbers[0]);
+    ui->twoNumberSpinBox->setValue(numbers[1]);
+    ui->threeNumberSpinBox->setValue(numbers[2]);
+    ui->fourNumberSpinBox->setValue(numbers[3]);
 }
 
-
-void MainWindow::on_searchButton_clicked()
+//Обработчик события клика по кнопке "Предсказать число"
+void MainWindow::on_nextNumberButton_clicked()
 {
-    lcg.searchingNumbers(ui->visualLabel);
-    ui->nextButton->setEnabled(true);
-    ui->searchButton->setEnabled(false);
-    ui->generateButton->setEnabled(false);
-}
+    //Берет значение из SpinBox-ов и передает их.
+    std::array<int, 4> values;
+    values[0] = ui->oneNumberSpinBox->value();
+    values[1] = ui->twoNumberSpinBox->value();
+    values[2] = ui->threeNumberSpinBox->value();
+    values[3] = ui->fourNumberSpinBox->value();
+    //Создаем экземпляр класса LinearCongruentialGenerator
+    LinearCongruentialGenerator lcg = LinearCongruentialGenerator(values);
 
+    //Ищем коэффицентов a, c, m.
+    lcg.searchNextNumber();
 
-void MainWindow::on_clearButton_clicked()
-{
-    lcg.clearValues();
-    ui->generatedNumbersList->clear();
-    ui->nextList->clear();
-    ui->searchButton->setEnabled(false);
-    ui->nextButton->setEnabled(false);
-    ui->generateButton->setEnabled(true);
+    //Выводим следующее чесло по найденным a, c, m.
+    ui->nextNumberValueLabel->setText(QString::number(lcg.getNextNumber()));
 }
 

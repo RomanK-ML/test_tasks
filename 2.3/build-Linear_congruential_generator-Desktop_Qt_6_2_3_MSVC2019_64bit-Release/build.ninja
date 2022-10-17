@@ -155,7 +155,7 @@ build Linear_congruential_generator_autogen\timestamp Linear_congruential_genera
 #############################################
 # Phony custom command for CMakeFiles\Linear_congruential_generator_autogen_timestamp_deps
 
-build CMakeFiles\Linear_congruential_generator_autogen_timestamp_deps | ${cmake_ninja_workdir}CMakeFiles\Linear_congruential_generator_autogen_timestamp_deps: phony C$:\Qt\6.2.3\msvc2019_64\.\bin\moc.exe C$:\Qt\6.2.3\msvc2019_64\.\bin\uic.exe C$:\Qt\6.2.3\msvc2019_64\lib\Qt6Core.lib C$:\Qt\6.2.3\msvc2019_64\lib\Qt6Widgets.lib
+build CMakeFiles\Linear_congruential_generator_autogen_timestamp_deps | ${cmake_ninja_workdir}CMakeFiles\Linear_congruential_generator_autogen_timestamp_deps: phony C$:\Qt\6.2.3\msvc2019_64\.\bin\uic.exe C$:\Qt\6.2.3\msvc2019_64\.\bin\moc.exe C$:\Qt\6.2.3\msvc2019_64\lib\Qt6Widgets.lib C$:\Qt\6.2.3\msvc2019_64\lib\Qt6Core.lib
 
 
 #############################################

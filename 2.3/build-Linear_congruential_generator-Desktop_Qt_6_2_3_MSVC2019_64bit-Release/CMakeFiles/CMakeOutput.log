@@ -26,16 +26,16 @@ The CXX compiler identification is MSVC, found in "C:/QT_projects/tests/build-Li
 Detecting CXX compiler ABI info compiled with the following output:
 Change Dir: C:/QT_projects/tests/build-Linear_congruential_generator-Desktop_Qt_6_2_3_MSVC2019_64bit-Release/CMakeFiles/CMakeTmp
 
-Run Build Command(s):C:/PROGRA~2/Microsoft Visual Studio/2019/Professional/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe cmTC_2d2a8 && [1/2] Building CXX object CMakeFiles\cmTC_2d2a8.dir\CMakeCXXCompilerABI.cpp.obj
+Run Build Command(s):C:/PROGRA~2/Microsoft Visual Studio/2019/Professional/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe cmTC_14e4e && [1/2] Building CXX object CMakeFiles\cmTC_14e4e.dir\CMakeCXXCompilerABI.cpp.obj
 Примечание: включение файла:  C:\Python310\Lib\site-packages\cmake\data\share\cmake-3.24\Modules\CMakeCompilerABI.h
-[2/2] Linking CXX executable cmTC_2d2a8.exe
+[2/2] Linking CXX executable cmTC_14e4e.exe
 
 
 
 Performing C++ SOURCE FILE Test HAVE_STDATOMIC succeeded with the following output:
 Change Dir: C:/QT_projects/tests/build-Linear_congruential_generator-Desktop_Qt_6_2_3_MSVC2019_64bit-Release/CMakeFiles/CMakeTmp
 
-Run Build Command(s):C:/PROGRA~2/Microsoft Visual Studio/2019/Professional/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe cmTC_25a4e && [1/2] Building CXX object CMakeFiles\cmTC_25a4e.dir\src.cxx.obj
+Run Build Command(s):C:/PROGRA~2/Microsoft Visual Studio/2019/Professional/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe cmTC_115c4 && [1/2] Building CXX object CMakeFiles\cmTC_115c4.dir\src.cxx.obj
 Примечание: включение файла:  C:\Program Files (x86)\Microsoft Visual Studio\2019\Professional\VC\Tools\MSVC\14.29.30133\include\atomic
 Примечание: включение файла:   C:\Program Files (x86)\Microsoft Visual Studio\2019\Professional\VC\Tools\MSVC\14.29.30133\include\yvals.h
 Примечание: включение файла:    C:\Program Files (x86)\Microsoft Visual Studio\2019\Professional\VC\Tools\MSVC\14.29.30133\include\yvals_core.h
@@ -83,7 +83,7 @@ Run Build Command(s):C:/PROGRA~2/Microsoft Visual Studio/2019/Professional/Commo
 Примечание: включение файла:      C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\time.h
 Примечание: включение файла:       C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt\corecrt_wtime.h
 C:\QT_projects\tests\build-Linear_congruential_generator-Desktop_Qt_6_2_3_MSVC2019_64bit-Release\CMakeFiles\CMakeTmp\src.cxx(17): warning C4312: приведение типов: преобразование из "unsigned int" в "void *" большего размера
-[2/2] Linking CXX executable cmTC_25a4e.exe
+[2/2] Linking CXX executable cmTC_115c4.exe
 
 
 Source file was:

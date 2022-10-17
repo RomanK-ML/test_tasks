@@ -1,30 +1,36 @@
 #ifndef LINEARCONGRUENTIALGENERATOR_H
 #define LINEARCONGRUENTIALGENERATOR_H
 
-#include <QLabel>
-
-#include "deque"
-#include "random"
+#include <QDebug>
+#include "array"
 
 class LinearCongruentialGenerator
 {
 public:
-    std::deque<int> numbersGenerated;
-    int valuesCount;
+    bool isDebug = false;
 
-    LinearCongruentialGenerator(int);
+    LinearCongruentialGenerator(std::array<int, 4>);
 
-    void generateValues();
-    void clearValues();
+    void searchNextNumber();
 
-    void searchingNumbers(QLabel*);
-    unsigned long int getNextNumber();
+    int getNextNumber();
 
 private:
-    unsigned long int m_seed = 1;
-    bool isSearch = false;
+    int aRes;
+    int cRes;
+    int mRes;
+    std::array<int,4> valuesArray;
+    int maxValue;
+    bool isSearch;
 
-    unsigned long int generatedNumber();
+    void bruteForce();
+
+    void algorithmEuclida();
+
+    int modular_inverse(int a, int m);
+
+    void debugNumbers();
+
 };
 
 #endif // LINEARCONGRUENTIALGENERATOR_H

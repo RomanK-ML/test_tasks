@@ -1,0 +1,89 @@
+{
+	"cmake" : 
+	{
+		"generator" : 
+		{
+			"multiConfig" : false,
+			"name" : "Ninja"
+		},
+		"paths" : 
+		{
+			"cmake" : "C:/Python310/Lib/site-packages/cmake/data/bin/cmake.exe",
+			"cpack" : "C:/Python310/Lib/site-packages/cmake/data/bin/cpack.exe",
+			"ctest" : "C:/Python310/Lib/site-packages/cmake/data/bin/ctest.exe",
+			"root" : "C:/Python310/Lib/site-packages/cmake/data/share/cmake-3.24"
+		},
+		"version" : 
+		{
+			"isDirty" : false,
+			"major" : 3,
+			"minor" : 24,
+			"patch" : 1,
+			"string" : "3.24.1",
+			"suffix" : ""
+		}
+	},
+	"objects" : 
+	[
+		{
+			"jsonFile" : "codemodel-v2-af1f700215b7b912507e.json",
+			"kind" : "codemodel",
+			"version" : 
+			{
+				"major" : 2,
+				"minor" : 4
+			}
+		},
+		{
+			"jsonFile" : "cache-v2-b3edaa8a8d04a1c7d58f.json",
+			"kind" : "cache",
+			"version" : 
+			{
+				"major" : 2,
+				"minor" : 0
+			}
+		},
+		{
+			"jsonFile" : "cmakeFiles-v1-d55cd8c5f8f74b2c9113.json",
+			"kind" : "cmakeFiles",
+			"version" : 
+			{
+				"major" : 1,
+				"minor" : 0
+			}
+		}
+	],
+	"reply" : 
+	{
+		"cache-v2" : 
+		{
+			"jsonFile" : "cache-v2-b3edaa8a8d04a1c7d58f.json",
+			"kind" : "cache",
+			"version" : 
+			{
+				"major" : 2,
+				"minor" : 0
+			}
+		},
+		"cmakeFiles-v1" : 
+		{
+			"jsonFile" : "cmakeFiles-v1-d55cd8c5f8f74b2c9113.json",
+			"kind" : "cmakeFiles",
+			"version" : 
+			{
+				"major" : 1,
+				"minor" : 0
+			}
+		},
+		"codemodel-v2" : 
+		{
+			"jsonFile" : "codemodel-v2-af1f700215b7b912507e.json",
+			"kind" : "codemodel",
+			"version" : 
+			{
+				"major" : 2,
+				"minor" : 4
+			}
+		}
+	}
+}

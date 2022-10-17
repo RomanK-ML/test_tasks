@@ -16,13 +16,10 @@ public:
     ~MainWindow();
 
 private slots:
-    void on_generateButton_clicked();
 
-    void on_nextButton_clicked();
+    void on_generatedNumbersButton_clicked();
 
-    void on_searchButton_clicked();
-
-    void on_clearButton_clicked();
+    void on_nextNumberButton_clicked();
 
 private:
     Ui::MainWindow *ui;
