@@ -13,7 +13,8 @@ MainWindow::MainWindow(QWidget *parent)
     , ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
-    ui->speedSoundLabel->text();
+    //Фиксируем размер окна
+    this->setFixedSize(330,400);
 }
 
 MainWindow::~MainWindow()
@@ -27,9 +28,12 @@ void MainWindow::on_createSoundButton_clicked()
 
    float speedSound = ui->speedSoundSpinBox->value();
    float distanceEars = ui->distanceEarsSpinBox->value();
-   float angleSource = ui->angleSourceSpinBox->value();
+   float angleSource = ui->startAngleSourceSpinBox->value();
+   float distanceSource = ui->dustanceSourceSpinBox->value();
+   float speedRotation = ui->speedRotationSourceSpinBox->value();
+   float soundTimeDuration = ui->soundTimeDurationSpinBox->value();
 
-   itd.init(speedSound, distanceEars, angleSource);
+   itd.init(speedSound, distanceEars, angleSource, distanceSource, speedRotation, soundTimeDuration);
    itd.createSound();
    itd.saveFile();
 

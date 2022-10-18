@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>330</width>
-    <height>290</height>
+    <height>400</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -27,7 +27,7 @@
      <item>
       <widget class="QLabel" name="speedSoundLabel">
        <property name="text">
-        <string>Скорость звука:</string>
+        <string>Скорость звука, м/с:</string>
        </property>
       </widget>
      </item>
@@ -65,7 +65,7 @@
      <item>
       <widget class="QLabel" name="distanceEarsLabel">
        <property name="text">
-        <string>Расстояние между ушами:</string>
+        <string>Расстояние между ушами, см:</string>
        </property>
       </widget>
      </item>
@@ -93,10 +93,10 @@
    <widget class="QWidget" name="verticalLayoutWidget">
     <property name="geometry">
      <rect>
-      <x>9</x>
-      <y>130</y>
+      <x>10</x>
+      <y>260</y>
       <width>311</width>
-      <height>111</height>
+      <height>91</height>
      </rect>
     </property>
     <layout class="QVBoxLayout" name="verticalLayout">
@@ -130,14 +130,14 @@
     </property>
     <layout class="QHBoxLayout" name="horizontalLayout_3">
      <item>
-      <widget class="QLabel" name="angleSourceLabel">
+      <widget class="QLabel" name="startAngleSourceLabel">
        <property name="text">
-        <string>Угол от источника:</string>
+        <string>Начальный угол, °:</string>
        </property>
       </widget>
      </item>
      <item>
-      <widget class="QDoubleSpinBox" name="angleSourceSpinBox">
+      <widget class="QDoubleSpinBox" name="startAngleSourceSpinBox">
        <property name="maximumSize">
         <size>
          <width>80</width>
@@ -148,7 +148,136 @@
         <double>360.000000000000000</double>
        </property>
        <property name="value">
-        <double>60.000000000000000</double>
+        <double>5.000000000000000</double>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QWidget" name="horizontalLayoutWidget_4">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>130</y>
+      <width>311</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout_4">
+     <item>
+      <widget class="QLabel" name="distanceSourceLabel">
+       <property name="text">
+        <string>Расстояние до источника, м:</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QDoubleSpinBox" name="dustanceSourceSpinBox">
+       <property name="maximumSize">
+        <size>
+         <width>80</width>
+         <height>16777215</height>
+        </size>
+       </property>
+       <property name="prefix">
+        <string/>
+       </property>
+       <property name="suffix">
+        <string/>
+       </property>
+       <property name="maximum">
+        <double>5000.000000000000000</double>
+       </property>
+       <property name="value">
+        <double>2.500000000000000</double>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QWidget" name="horizontalLayoutWidget_5">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>170</y>
+      <width>311</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout_5">
+     <item>
+      <widget class="QLabel" name="speedRotationSourceLabel">
+       <property name="text">
+        <string>Скорость поворота, °/с:</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QDoubleSpinBox" name="speedRotationSourceSpinBox">
+       <property name="maximumSize">
+        <size>
+         <width>80</width>
+         <height>16777215</height>
+        </size>
+       </property>
+       <property name="prefix">
+        <string/>
+       </property>
+       <property name="suffix">
+        <string/>
+       </property>
+       <property name="minimum">
+        <double>1.000000000000000</double>
+       </property>
+       <property name="maximum">
+        <double>1000.000000000000000</double>
+       </property>
+       <property name="value">
+        <double>180.000000000000000</double>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QWidget" name="horizontalLayoutWidget_6">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>210</y>
+      <width>311</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout_6">
+     <item>
+      <widget class="QLabel" name="soundTimeDurationLabel">
+       <property name="text">
+        <string>Продолжительность звука, с:</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QDoubleSpinBox" name="soundTimeDurationSpinBox">
+       <property name="maximumSize">
+        <size>
+         <width>80</width>
+         <height>16777215</height>
+        </size>
+       </property>
+       <property name="prefix">
+        <string/>
+       </property>
+       <property name="suffix">
+        <string/>
+       </property>
+       <property name="minimum">
+        <double>0.100000000000000</double>
+       </property>
+       <property name="maximum">
+        <double>300.000000000000000</double>
+       </property>
+       <property name="value">
+        <double>2.000000000000000</double>
        </property>
       </widget>
      </item>

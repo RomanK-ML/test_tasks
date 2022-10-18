@@ -155,7 +155,7 @@ build Interaural_time_difference_autogen\timestamp Interaural_time_difference_au
 #############################################
 # Phony custom command for CMakeFiles\Interaural_time_difference_autogen_timestamp_deps
 
-build CMakeFiles\Interaural_time_difference_autogen_timestamp_deps | ${cmake_ninja_workdir}CMakeFiles\Interaural_time_difference_autogen_timestamp_deps: phony C$:\Qt\6.2.3\msvc2019_64\.\bin\moc.exe C$:\Qt\6.2.3\msvc2019_64\.\bin\uic.exe C$:\Qt\6.2.3\msvc2019_64\lib\Qt6Widgets.lib C$:\Qt\6.2.3\msvc2019_64\lib\Qt6Core.lib
+build CMakeFiles\Interaural_time_difference_autogen_timestamp_deps | ${cmake_ninja_workdir}CMakeFiles\Interaural_time_difference_autogen_timestamp_deps: phony C$:\Qt\6.2.3\msvc2019_64\.\bin\uic.exe C$:\Qt\6.2.3\msvc2019_64\.\bin\moc.exe C$:\Qt\6.2.3\msvc2019_64\lib\Qt6Core.lib C$:\Qt\6.2.3\msvc2019_64\lib\Qt6Widgets.lib
 
 
 #############################################
